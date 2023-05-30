@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+}
+/* Styles for navbar and hero image */
+.nav_hero_section {
+    background-image: url("../images/Hero-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* width: 375px; */
+    min-height: 812px;
+}
+
+/* Background image styles for tablet and desktop */
+@media screen and (min-height: 600px) {
+    .nav_hero_section {
+        background-image: url("../images/Hero-tablet.svg");
+        /* width: 744px; */
+    }
+}
+
+@media screen and (min-height: 1024px) {
+    .nav_hero_section {
+        background-image: url("../images/Hero-desktop.png");
+        /* width: 1280px; */
+    }
+}
+
+/* Styles for log */
+header .site_logo {
+  margin-left: 1.25rem;
+  margin-top: 2.125rem;
+}
+
+.container {
+    
+}
+
+/* Navbar styles starts from here */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 2.125rem;
+    margin-right: 1.25rem;
+    cursor: pointer;
+}
+
+.nav li:not(:last-child) {
+    margin-right: 0.695rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav .btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+ }
+
+/* Styles for overlay navbar starts here */
+.nav-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-overlay ul {
+    list-style: none;
+     color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-overlay li:not(:last-child) {
+   margin-bottom: 30px;
+
+}
+
+.nav-overlay a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close_icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ffffff
+}
+
+/* Animation styles for overlay */
+.slide-from-right {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight {
+    /* Animation from the right edge */
+    from {
+        transform: translateX(100%);
+    }
+    /* Slide overlay to the left */
+    to {
+        transform: translateX(0);
+    }
+} 
+
+/* Styles for hero starts here */
+section .container_hero {
+    border: 0.5px solid black;
+    width: 330px;
+    height: 171px;
+    position: absolute;
+    left: calc(50% - 330px/2 - 0.5px);
+    top: 315px;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+section p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin-top: 1.875rem;
+}
+
+section .hero_btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 0.813rem;
+    margin-bottom: 1.938rem;
+    margin-left: 8rem;
+}
+
+

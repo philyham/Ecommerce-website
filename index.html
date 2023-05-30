@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/Site_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>E-commerce Website</title>
+</head>
+<body>
+    <!-- This main div contains both the navbar and hero items because the backgorund image covers both sections -->
+  <div class="nav_hero_section">
+    <header class="header">
+        <div class="container">
+            <!-- Navbar containing the logo, icons and nav menu items -->
+            <nav class="navbar">
+                <!-- Logo -->
+            <div class="site_logo">
+                <img src="./assets/images/Site_logo.svg" alt="logo">
+            </div>
+            <div>
+                <!-- Nav menu items consisting of icons -->
+                <nav class="nav">
+                  <ul>
+                    <li><a href="#"><img src="./assets/images/user.svg" alt="user"></a></li>
+                    <li><a href="#"><img src="./assets/images/shopping-cart.svg" alt="shopping-cart"></a></li>
+                    <li>
+                        <a href="#">
+                            <button type="button" class="btn" onclick="showOverlay()">
+                                <span class="sr-only">
+                                    <img src="./assets/images/menu.svg" alt="menu">
+                                </span>
+                            </button>
+                        </a>
+                    </li>
+                  </ul>
+            </nav>
+               </div>
+            </nav>
+        </div>
+        <!-- Nav menu items to be overlayed for mobile and tabletS -->
+        <div class="nav-overlay">
+          <nav id="overlay">
+            <ul>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          <div class="close_icon">
+            <i data-feather="x" onclick="hideOverlay()"></i>
+          </div>
+           </nav>
+        </div>
+               
+    </header>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container_hero">
+          <p>New Product
+            Collection
+         </p>
+         <!-- Button for Hero Section -->
+         <button type="button" class="hero_btn">Shop Now</button>
+        </div>
+      </section>
+    </div>
+  
+    <!-- Overlay codes to be shown and hidden for mobile and tablet in JavaScript -->
+  <script>
+    feather.replace();
+
+    function showOverlay() {
+        document.getElementById("overlay").style.display = "flex";
+        document.getElementById("overlay").classList.add("slide-from-right"); 
+    }
+    function hideOverlay() {
+        document.getElementById("overlay").style.display = "none";
+    }
+</script>
+</body>
+</html>
