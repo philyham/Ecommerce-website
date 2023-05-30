@@ -20,22 +20,13 @@ body {
     min-height: 812px;
 }
 
-/* Background image styles for tablet and desktop */
-@media screen and (min-height: 600px) {
+@media (min-height: 600px) {
     .nav_hero_section {
         background-image: url("../images/Hero-tablet.svg");
-        /* width: 744px; */
     }
 }
 
-@media screen and (min-height: 1024px) {
-    .nav_hero_section {
-        background-image: url("../images/Hero-desktop.png");
-        /* width: 1280px; */
-    }
-}
-
-/* Styles for log */
+/* Styles for logo */
 header .site_logo {
   margin-left: 1.25rem;
   margin-top: 2.125rem;
@@ -141,11 +132,13 @@ header .site_logo {
     }
 } 
 
+
+
 /* Styles for hero starts here */
-section .container_hero {
+.hero .container_hero {
     border: 0.5px solid black;
     width: 330px;
-    height: 171px;
+    min-height: 171px;
     position: absolute;
     left: calc(50% - 330px/2 - 0.5px);
     top: 315px;
@@ -179,5 +172,6 @@ section .hero_btn {
     margin-bottom: 1.938rem;
     margin-left: 8rem;
 }
+
 
 
