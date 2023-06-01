@@ -1,0 +1,308 @@
+/* Styles for navbar and hero background-image */
+.hero {
+    background: url("../images/Hero.svg") 
+               no-repeat scroll center center /cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+
+/* Styles for logo */
+header .site_logo {
+  margin-left: 1.25rem;
+  margin-top: 2.125rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for Hero */
+.hero .hero_headline {
+    width: 330px;
+    text-align: center;
+    padding: 1.875rem 2.5rem;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+.hero_headline h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0.813rem;
+}
+
+.hero_headline .hero_btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Styles for Main Menu Items */
+ul li {
+    list-style: none;
+}
+
+.menu_items ul {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+ }
+ 
+ .menu_items li {
+     margin-right: 1.688rem;
+ }
+ 
+ .menu_items li:first-child {
+     margin-left: 1.688rem;
+ }
+ 
+ .menu_items a {
+     color: #FFFFFF;
+ }
+
+/* Styles for Nav Icons */
+.nav_icons {
+    color: #FFFFFF;
+}
+
+.nav_icons .icons {
+    cursor: pointer;
+}
+
+.nav_icons .icons:not(:last-child) {
+    margin-right: 0.695rem;
+}
+
+
+.nav_icons .menu_btn {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    margin-left: 0.695rem;
+}
+
+/* Styles for Overlay */
+.nav_overlay ul {
+    list-style: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav_overlay li:not(:last-child) {
+   margin-bottom: 30px;
+
+}
+
+.nav_overlay a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close_icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ffffff;
+    cursor: pointer;
+} 
+
+/* Animation styles for overlay */
+.slide-from-right {
+    animation-name: slideFromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideFromRight {
+    /* Animation from the right edge */
+    from {
+        transform: translateX(100%);
+    }
+    /* Slide overlay to the left */
+    to {
+        transform: translateX(0);
+    }
+} 
+
+/* Styles for Media Queries */
+@media (max-width: 900px) {
+    .menu_items {
+        display: none;
+    }
+}
+
+
+@media(min-width: 900px) {
+    .hero .hero_headline {
+        width: 521px;
+        padding: 3.75rem 3.938rem;
+    }
+    .nav_overlay {
+        display: none;
+    }
+}
+
+/* .header .container .navbar {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Styles for Nav Icons */
+/* .nav_icons ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 2.125rem;
+    margin-right: 1.25rem;
+}
+
+.nav_icons li {
+    cursor: pointer;
+}
+
+.nav_icons li:not(:last-child) {
+    margin-right: 0.695rem;
+}
+
+.nav_icons a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav_icons .btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+ } */
+
+/* Styles for navbar desktop starts here */
+/* .desktop_nav {
+    display: none;
+ } */
+
+/* Styles for hero starts here */
+/* .hero .container_hero {
+    border: 0.5px solid black;
+    width: 330px;
+    min-height: 171px;
+    position: absolute;
+    left: calc(50% - 330px/2 - 0.5px);
+    top: 315px;
+    background: rgba(255, 255, 255, 0.83);
+}
+
+section p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 33px;
+    text-align: center;
+    color: #000000;
+    margin-top: 1.875rem;
+}
+
+section .hero_btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 0.813rem;
+    margin-bottom: 1.938rem;
+    margin-left: 8rem;
+} */
+
+/* Styles for overlay navbar starts here */
+/* .nav-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-overlay ul {
+    list-style: none;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-overlay li:not(:last-child) {
+   margin-bottom: 30px;
+
+}
+
+.nav-overlay a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.close_icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ffffff;
+    cursor: pointer;
+} */
+ 
+
+

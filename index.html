@@ -6,68 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/Site_logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/hero.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <title>E-commerce Website</title>
 </head>
 <body>
-    <!-- This main div contains both the navbar and hero items because the backgorund image covers both sections -->
-  <div class="nav_hero_section">
-    <header class="header">
-        <div class="container">
-            <!-- Navbar containing the logo, icons and nav menu items -->
-            <nav class="navbar">
-                <!-- Logo -->
-            <div class="site_logo">
-                <img src="./assets/images/Site_logo.svg" alt="logo">
-            </div>
-            <div>
-                <!-- Nav menu items consisting of icons -->
-                <nav class="nav">
-                  <ul>
-                    <li><a href="#"><img src="./assets/images/user.svg" alt="user"></a></li>
-                    <li><a href="#"><img src="./assets/images/shopping-cart.svg" alt="shopping-cart"></a></li>
-                    <li>
-                        <a href="#">
-                            <button type="button" class="btn" onclick="showOverlay()">
-                              <img src="./assets/images/menu.svg" alt="menu">
-                            </button>
-                        </a>
-                    </li>
-                  </ul>
-            </nav>
-               </div>
-            </nav>
-        </div>
-        <!-- Nav menu items to be overlayed for mobile and  -->
-        <div class="nav-overlay">
-          <nav id="overlay">
-            <ul>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          <div class="close_icon">
-            <i data-feather="x" onclick="hideOverlay()"></i>
-          </div>
-           </nav>
-        </div>
-               
-    </header>
-
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="container_hero">
-          <p>New Product
-            Collection
-         </p>
-         <!-- Button for Hero Section -->
-         <button type="button" class="hero_btn">Shop Now</button>
-        </div>
-      </section>
+    <!-- This section contains both the navbar and hero items because the backgorund image covers both sections -->
+  <section class="hero">
+    <div class="container">
+      <!-- Logo -->
+      <div class="site_logo">
+        <img src="./assets/images/Site_logo.svg" alt="">
+      </div>
+      <!-- Main menu items -->
+      <nav class="menu_items">
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Nav icons items -->
+      <div class="nav_icons">
+        <i data-feather="user" class="icons"></i>
+        <i data-feather="shopping-cart" class="icons"></i>
+        <button type="button" class="menu_btn" onclick="showOverlay()">
+          <i data-feather="menu" class="icons"></i>
+        </button>
+      </div>
+     <!-- Overlay for nav menu items -->
+    <div id="overlay">
+      <nav class="nav_overlay">
+        <ul>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      <div class="close_icon">
+        <i data-feather="x" onclick="hideOverlay()"></i>
+      </div>
+      </nav>
     </div>
-  
-    <!-- Overlay codes to be shown and hidden for mobile and tablet in JavaScript -->
+    </div>
+    <!-- Hero section -->
+    <div class="hero_headline">
+      <div class="hero_content">
+        <h1>New Product Collection</h1>
+        <button class="hero_btn">
+          Shop Now
+        </button>
+      </div>
+    </div>
+  </section>
   <script>
     feather.replace();
 
