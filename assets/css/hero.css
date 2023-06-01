@@ -177,6 +177,9 @@ ul li {
     .nav_overlay {
         display: none;
     }
+    #overlay {
+        display: none;
+    }
 }
 
 /* .header .container .navbar {
