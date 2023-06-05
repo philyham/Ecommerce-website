@@ -1,0 +1,54 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .furniture_collection {
+    max-width: 350px;
+    max-height: 178.07px;
+    padding: 2.063rem 12.375rem 3.192rem 0.875rem;
+    margin-top: 3.313rem 
+}
+
+.banner .baskets_collection {
+    max-width: 350px;
+    max-height: 178.07px;
+    padding: 2.063rem 12.375rem 3.192rem 0.875rem;
+    margin-top: 1.308rem;
+    margin-bottom: 3.308rem;
+}
+
+.furniture {
+    background-image: url("../images/new-assets-images/furn.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.baskets {
+    background-image: url("../images/new-assets-images/bask.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shop_btn {
+    border: none;
+    background-color: transparent;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    color: #000000;
+    cursor: pointer;
+}
+
+.banner h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+}

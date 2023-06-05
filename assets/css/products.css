@@ -1,0 +1,44 @@
+.products {
+ padding-top: 3.308rem;
+ text-align: center;
+}
+
+.products .products_container {
+  padding-top: 3.308rem;
+}
+
+.products_container h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+ }
+
+.images_container {
+  /* padding-top: 2.938rem; */
+}
+
+.images_container .image {
+
+}
+
+.image1 .products_text1 {
+  position: absolute;
+  top: 850px;
+  color: #FFFFFF;
+  z-index: 2000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.item {
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+}

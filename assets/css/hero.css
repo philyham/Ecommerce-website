@@ -181,9 +181,7 @@ ul li {
         display: none;
     }
     .slide-from-right {
-        animation-name: none;
-        animation-duration: 0s;
-        animation-timing-function: none;
+        display: none;
     }
 }
 
